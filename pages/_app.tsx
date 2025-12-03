@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }
         `}</style>
       </Head>
-      <nav>SRDreams</nav>
+      <nav>Hello World!</nav>
       <Component {...pageProps} />
     </>
   );
