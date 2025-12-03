@@ -5,16 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <style>{`
-          .header {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #333;
-            text-align: center;
-            margin: 20px 0;
-            background-color: #f0f0f0;
-            padding: 15px;
-          }
           body {
             background-color: #f9f9f9;
             color: #333;
@@ -30,7 +20,6 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <body className="antialiased">
-        <header className="header">Welcome to Your Next.js Adventure!</header>
         <p>This is another test</p>
         <Main />
         <NextScript />
