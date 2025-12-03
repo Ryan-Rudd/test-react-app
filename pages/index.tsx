@@ -9,8 +9,11 @@ const interFont = Inter({
 export default function Home() {
   return (
     <div
-      className={`${interFont.className} flex min-h-screen items-center justify-center bg-gray-100 font-sans dark:bg-gray-900`}
+      className={`${interFont.className} flex min-h-screen flex-col items-center justify-start bg-gray-100 font-sans dark:bg-gray-900`}
     >
+      <header className="w-full bg-white text-black text-center py-4 font-serif text-xl">
+        SRDreams
+      </header>
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-gray-800 sm:items-start">
         <Image
           className="dark:invert"
