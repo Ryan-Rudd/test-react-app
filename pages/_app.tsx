@@ -1,10 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
-
 import { useEffect } from "react";
 
 function Header() {
@@ -23,7 +19,8 @@ function Header() {
 
   return (
     <header>
-      <h1>Welcome to Your Next Adventure!</h1>
+      <h1>Welcome to Your Next.js Adventure!</h1>
+      <p>This is another test</p>
     </header>
   );
 }
