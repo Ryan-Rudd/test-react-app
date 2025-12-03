@@ -9,16 +9,27 @@ export default function Document() {
             font-family: 'Roboto', sans-serif;
             font-size: 2rem;
             font-weight: bold;
-            color: #333;
+            color: red;
             text-align: center;
             margin: 20px 0;
+            background-color: blue;
+            padding: 10px;
+          }
+          body {
+            background-color: blue;
+            color: red;
+          }
+          p {
+            color: red;
+            text-align: center;
+            margin: 10px 0;
           }
         `}</style>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <body className="antialiased">
         <header className="header">Welcome to Your Next.js Adventure!</header>
-        <p style={{ textAlign: 'center', margin: '10px 0' }}>This is another test</p>
+        <p>This is another test</p>
         <Main />
         <NextScript />
       </body>

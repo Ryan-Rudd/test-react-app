@@ -10,10 +10,10 @@ function Header() {
       header.style.fontFamily = "'Roboto', sans-serif";
       header.style.fontSize = "2rem";
       header.style.fontWeight = "bold";
-      header.style.color = "#333";
+      header.style.color = "red";
       header.style.textAlign = "center";
       header.style.padding = "20px";
-      header.style.backgroundColor = "#f0f0f0";
+      header.style.backgroundColor = "blue";
     }
   }, []);
 
