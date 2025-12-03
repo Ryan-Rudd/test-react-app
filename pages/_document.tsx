@@ -6,26 +6,28 @@ export default function Document() {
       <Head>
         <style>{`
           .header {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2rem;
-            font-weight: bold;
-            color: red;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
             text-align: center;
             margin: 20px 0;
-            background-color: blue;
-            padding: 10px;
+            background-color: #f0f0f0;
+            padding: 15px;
           }
           body {
-            background-color: blue;
-            color: red;
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
           }
           p {
-            color: red;
+            color: #555;
             text-align: center;
             margin: 10px 0;
+            font-size: 1.1rem;
           }
         `}</style>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <body className="antialiased">
         <header className="header">Welcome to Your Next.js Adventure!</header>
