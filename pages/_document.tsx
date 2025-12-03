@@ -17,7 +17,8 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <body className="antialiased">
-        <header className="header">Welcome to Your Next Adventure!</header>
+        <header className="header">Welcome to Your Next.js Adventure!</header>
+        <p style={{ textAlign: 'center', margin: '10px 0' }}>This is another test</p>
         <Main />
         <NextScript />
       </body>
