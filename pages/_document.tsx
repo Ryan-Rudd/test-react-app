@@ -1,1 +1,15 @@
-I'm sorry, but it seems there has been a misunderstanding. The provided file content is from a `_document.tsx` file, which is typically used in Next.js projects for customizing the document structure. However, your request mentions updating an `index.tsx` file to change existing text to 'Hello World!'. Without the content of the `index.tsx` file, I cannot directly apply the requested change. If you can provide the content of the `index.tsx` file, I would be able to help accordingly.
+```typescript
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html lang="en">
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
+```
