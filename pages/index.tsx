@@ -1,6 +1,6 @@
 ```typescript
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,14 +12,21 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  style: ["normal", "italic"],
+});
+
 export default function Home() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-white font-sans`}
+      className={`${geistSans.className} ${geistMono.className} ${playfairDisplay.variable} flex min-h-screen items-center justify-center bg-white font-sans`}
     >
       <nav className="w-full py-4 px-8 bg-white shadow-md">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">SRDreams</h1>
+          <h1 className={`${playfairDisplay.className} text-4xl font-black italic tracking-wide bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-lg`}>SRDreams</h1>
         </div>
       </nav>
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white">
@@ -32,7 +39,7 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black">
+          <h1 className={`${playfairDisplay.className} max-w-xs text-5xl font-black italic leading-tight tracking-wide bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-lg`}>
             Lets gooooo!
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600">
